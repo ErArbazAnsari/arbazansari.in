@@ -3,13 +3,12 @@ import LinkWithIcon from "@/components/LinkWithIcon";
 import Posts from "@/components/Posts";
 import PostsSkeleton from "@/components/PostsSkeleton";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
 import SwipeCards from "@/components/SwipeCards";
 import { Button } from "@/components/ui/Button";
 import { getPosts } from "@/lib/posts";
 import {
-  ArrowDown,
-  ArrowDownRight,
   ArrowRightIcon,
   FileDown,
 } from "lucide-react";
@@ -17,9 +16,10 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 import homeContent from "@/data/home.json";
+import { calculateAge } from "@/lib/calculate-age";
 
-const TED_BIRTH_YEAR = 1997;
-const LIMIT = 2; // max show 2
+const ARBAZ_DOB = new Date("2004-06-26");
+const LIMIT = 2;
 
 async function RecentPosts() {
   const posts = (await getPosts())
@@ -29,7 +29,7 @@ async function RecentPosts() {
 }
 
 export default function Home() {
-  const currentAge = new Date().getFullYear() - TED_BIRTH_YEAR;
+  const currentAge = calculateAge(ARBAZ_DOB)
 
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
@@ -42,33 +42,11 @@ export default function Home() {
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            {currentAge}yo software engineer from Singapore 🇸🇬
+            {currentAge}yo software engineer from India 🇮🇳
           </p>
 
-          <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
+          <p className="mt-4 max-w-md text-balance text-sm sm:text-base">
             {homeContent.introduction.description}
-          </p>
-
-          <div className="mt-6 flex items-center gap-1">
-            <p className="text-balance text-sm font-semibold sm:text-base">
-              {homeContent.introduction.chatPrompt}
-            </p>
-            <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
-            <ArrowDown className="block size-5 animate-bounce sm:hidden" />
-          </div>
-
-          <p className="mt-1 text-xs font-light">
-            {homeContent.introduction.escalation.text}&nbsp;
-            <Link
-              href={homeContent.escalationLink.href}
-              target="_blank"
-              className="link font-semibold underline"
-              title={homeContent.escalationLink.title}
-            >
-              {homeContent.introduction.escalation.linkText}
-            </Link>
-            &nbsp;
-            {homeContent.introduction.escalation.suffix}
           </p>
 
           <section className="mt-6 flex flex-wrap items-center gap-4">
@@ -84,6 +62,8 @@ export default function Home() {
       </section>
 
       <Experience />
+
+      <Skills />
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">

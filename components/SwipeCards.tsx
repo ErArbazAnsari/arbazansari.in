@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import { animate, motion, PanInfo, useMotionValue, useTransform } from "framer-motion";
 import { RefreshCw } from "lucide-react";
 import { Dispatch, SetStateAction, useState } from "react";
 import ImageWithSkeleton from "./ImageWithSkeleton";
@@ -21,7 +21,7 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
   return (
     <div
       className={cn(
-        "relative grid h-[233px] w-[175px] place-items-center",
+        "relative grid h-56 w-48 place-items-center",
         className,
       )}
     >
@@ -74,12 +74,13 @@ const Card = ({
     return `${rotateRaw.get() + offset}deg`;
   });
 
-  const handleDragEnd = (event: any, info: { offset: { x: number } }) => {
+  const handleDragEnd = (
+    _: MouseEvent | TouchEvent | PointerEvent,
+    info: PanInfo
+  ) => {
     if (Math.abs(info.offset.x) > 100) {
-      // If swiped far enough, remove the card
       setCards((pv) => pv.filter((v) => v.id !== id));
     } else {
-      // Otherwise, animate the card back to the center
       animate(x, 0, {
         type: "spring",
         stiffness: 400,
@@ -90,7 +91,7 @@ const Card = ({
 
   return (
     <motion.div
-      className="absolute h-[233px] w-[175px] origin-bottom overflow-hidden rounded-lg bg-white hover:cursor-grab active:cursor-grabbing"
+      className="absolute h-56 w-48 origin-bottom overflow-hidden rounded-lg bg-white hover:cursor-grab active:cursor-grabbing border border-gray-300"
       style={{
         gridRow: 1,
         gridColumn: 1,
@@ -102,7 +103,6 @@ const Card = ({
           : undefined,
       }}
       animate={{
-        // Ensure the top card is always the largest paint candidate.
         scale: isFront ? 1 : Math.max(0.85, 0.94 - depth * 0.04),
       }}
       drag={isFront ? "x" : false}
@@ -166,9 +166,5 @@ const cardData: Card[] = [
   {
     id: 3,
     url: "/images/3.png",
-  },
-  {
-    id: 4,
-    url: "/images/4.png",
-  },
+  }
 ];

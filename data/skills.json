@@ -1,0 +1,75 @@
+{
+    "skills": [
+        {
+            "category": "Programming Languages",
+            "items": [
+                "JavaScript",
+                "C++",
+                "TypeScript",
+                "Python"
+            ]
+        },
+        {
+            "category": "Frameworks & Libraries",
+            "items": [
+                "React.js",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "Tailwind CSS",
+                "Redux Toolkit",
+                "Zustand",
+                "TanStack Query",
+                "GraphQL",
+                "LangChain",
+                "LangGraph"
+            ]
+        },
+        {
+            "category": "Databases & ORM",
+            "items": [
+                "MongoDB",
+                "PostgreSQL",
+                "Redis",
+                "Prisma",
+                "Drizzle"
+            ]
+        },
+        {
+            "category": "Cloud & DevOps",
+            "items": [
+                "Docker",
+                "NGINX",
+                "CI/CD (GitHub Actions)",
+                "Kubernetes",
+                "Azure",
+                "AWS",
+                "Linux",
+                "Scripting"
+            ]
+        },
+        {
+            "category": "AI/ML & Backend Systems",
+            "items": [
+                "RAG",
+                "Vector Databases",
+                "GPT APIs",
+                "Background Workers",
+                "Cron Jobs",
+                "System Design"
+            ]
+        },
+        {
+            "category": "Tools & Others",
+            "items": [
+                "Version Control",
+                "WebSockets",
+                "REST APIs",
+                "OAuth",
+                "JWT",
+                "RBAC",
+                "GenAI"
+            ]
+        }
+    ]
+}

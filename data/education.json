@@ -1,49 +1,31 @@
 {
   "education": [
     {
-      "name": "Digipen Institute of Technology Singapore",
-      "href": "https://www.digipen.edu.sg",
-      "logo": "/img/digipen.png",
+      "name": "Maharshi Dayanand University",
+      "href": "https://mdu.ac.in",
+      "logo": "/education/mdu.webp",
       "positions": [
         {
-          "title": "BS in Computer Science in Real-Time Interactive Simulation",
-          "start": "Sep 2019",
-          "end": "Apr 2023",
+          "title": "B.Tech (Computer Science & Engineering)",
+          "start": "2021",
+          "end": "2025",
           "description": [
-            "Graduated with a Minor in Mathematics",
-            "President of Digipen Student Management Committee for freshman year",
-            "3-time recipient of the Dean's Honor List"
-          ],
-          "links": [
-            {
-              "name": "Final Year Project",
-              "href": "https://games.digipen.edu/games/rapid-ride-fight",
-              "icon": "globe"
-            },
-            {
-              "name": "2nd Year Project",
-              "href": "https://games.digipen.edu/games/glowing-under",
-              "icon": "globe"
-            }
+            "Percentage: 76%"
           ]
         }
       ]
     },
     {
-      "name": "Singapore Polytechnic",
-      "href": "https://www.sp.edu.sg",
-      "logo": "/img/sp.png",
+      "name": "Haryana Board of School Education",
+      "href": "https://bseh.org.in",
+      "logo": "/education/hbse.webp",
       "positions": [
         {
-          "title": "Diploma in Games Design and Development",
-          "start": "Apr 2014",
-          "end": "May 2017",
-          "links": [
-            {
-              "name": "Final Year Project",
-              "href": "https://tedawf.github.io/portfolio-2019/phase.html",
-              "icon": "globe"
-            }
+          "title": "Senior Secondary",
+          "start": "2020",
+          "end": "2021",
+          "description": [
+            "Percentage: 85%"
           ]
         }
       ]

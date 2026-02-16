@@ -1,0 +1,20 @@
+{
+    "certifications": [
+        {
+            "name": "AWS & DevOps Camp",
+            "description": "Completed a hands-on program AWS basic services, Linux, Git/GitHub, Docker, and CI/CD.",
+            "icon": "globe"
+        },
+        {
+            "name": "LeetCode / GFG",
+            "description": "Solved 350+ Data Structures & Algorithms problems.",
+            "href": "https://leetcode.com/u/ArbazAnsari",
+            "icon": "globe"
+        },
+        {
+            "name": "Udemy",
+            "description": "Full Stack Web Development.",
+            "icon": "globe"
+        }
+    ]
+}

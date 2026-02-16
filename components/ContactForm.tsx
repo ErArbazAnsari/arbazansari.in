@@ -4,7 +4,6 @@ import { sendEmail } from "@/lib/actions";
 import { ContactFormSchema } from "@/lib/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { PaperPlaneIcon, ReloadIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -144,12 +143,6 @@ export default function ContactForm() {
               <PaperPlaneIcon className="ml-2" />
             </div>
           </Button>
-          <p className="mt-4 text-xs text-muted-foreground">
-            By submitting this form, I agree to the{" "}
-            <Link href="/privacy" className="link font-semibold">
-              privacy&nbsp;policy.
-            </Link>
-          </p>
         </div>
       </form>
 

@@ -25,12 +25,6 @@
       "showInNav": true
     },
     {
-      "path": "/privacy",
-      "name": "privacy",
-      "description": "Privacy policy",
-      "showInNav": false
-    },
-    {
       "path": "/resume.pdf",
       "name": "resume",
       "description": "Ted's resume CV in pdf format",

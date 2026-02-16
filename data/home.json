@@ -1,16 +1,10 @@
 {
   "introduction": {
-    "greeting": "hi ted here. 👋",
-    "description": "Backend by profession, full-stack by passion. I build and self-host the lot.",
-    "chatPrompt": "For Q&A, start a chat with Ted Support",
-    "escalation": {
-      "text": "For any escalations, please find my",
-      "linkText": "Ted Lead",
-      "suffix": "instead."
-    }
+    "greeting": "Hi, I'm Arbaz Ansari. 👋",
+    "description": "Building scalable software that solves real problems."
   },
-  "escalationLink": {
-    "href": "https://www.instagram.com/gomugomu.cat",
-    "title": "meow"
+  "resumeLink": {
+    "href": "https://drive.google.com/file/d/1Mr_PhtFKzy1UiH0HkT5MNM67xRMZy6ld/view?usp=sharing",
+    "title": "Resume"
   }
 }

@@ -11,10 +11,6 @@ export default function Footer() {
             &copy; {new Date().getFullYear()}{" "}
             <Link className="link" href="/">
               arbazansari.in
-            </Link>{" "}
-            |{" "}
-            <Link className="link font-bold" href="/privacy">
-              privacy?
             </Link>
           </p>
         </section>
