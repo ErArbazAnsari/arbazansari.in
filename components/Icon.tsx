@@ -8,12 +8,19 @@ interface IconProps extends Omit<LucideProps, "ref"> {
   name: keyof typeof dynamicIconImports;
 }
 
-const Icon = ({ name, ...props }: IconProps) => {
-  const LucideIcon = lazy(dynamicIconImports[name]);
+const iconCache: Partial<Record<keyof typeof dynamicIconImports, React.LazyExoticComponent<React.ComponentType<LucideProps>>>> = {};
 
+function getIcon(name: keyof typeof dynamicIconImports) {
+  if (!iconCache[name]) {
+    iconCache[name] = lazy(dynamicIconImports[name]);
+  }
+  return iconCache[name]!;
+}
+
+const Icon = ({ name, ...props }: IconProps) => {
   return (
     <Suspense fallback={fallback}>
-      <LucideIcon {...props} />
+      {React.createElement(getIcon(name), props)}
     </Suspense>
   );
 };

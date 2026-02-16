@@ -1,6 +1,6 @@
 import { PostSummary } from "@/lib/posts";
 import { formatDate } from "@/lib/utils";
-import { Calendar, Clock, Edit3, Eye } from "lucide-react";
+import { Calendar, Clock, Edit3 } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "./ui/Badge";
 import { Card } from "./ui/Card";
@@ -66,7 +66,7 @@ export default function Posts({ posts }: Props) {
                       </div>
 
                       {/* Metadata Section */}
-                      <div className="flex flex-shrink-0 flex-col items-start gap-2 text-sm text-muted-foreground sm:items-end">
+                      <div className="flex shrink-0 flex-col items-start gap-2 text-sm text-muted-foreground sm:items-end">
                         {/* Date Information */}
                         {post.publishedAt && (
                           <div className="flex items-center gap-1.5">

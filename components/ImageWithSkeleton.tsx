@@ -35,6 +35,11 @@ export default function ImageWithSkeleton({
       <Image
         alt={alt}
         {...props}
+        unoptimized={
+          typeof props.src === "string" && props.src.endsWith(".gif")
+            ? true
+            : props.unoptimized
+        }
         className={cn("relative z-0", className)}
         onLoad={(event) => {
           setIsLoaded(true);

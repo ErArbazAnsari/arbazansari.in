@@ -114,35 +114,19 @@ const Card = ({
       }}
       onDragEnd={handleDragEnd}
     >
-      {isFront ? (
-        <ImageWithSkeleton
-          src={url}
-          alt="Photo of Ted"
-          width={175}
-          height={233}
-          sizes="175px"
-          quality={75}
-          draggable={false}
-          containerClassName="h-full w-full pointer-events-none"
-          className="h-full w-full select-none object-cover"
-          fetchPriority="high"
-          priority
-        />
-      ) : (
-        <ImageWithSkeleton
-          src={url}
-          alt=""
-          width={175}
-          height={233}
-          sizes="175px"
-          quality={70}
-          draggable={false}
-          containerClassName="h-full w-full pointer-events-none"
-          className="h-full w-full select-none object-cover"
-          fetchPriority="low"
-          loading="lazy"
-        />
-      )}
+      <ImageWithSkeleton
+        src={url}
+        alt={isFront ? "Photo of Arbaz" : ""}
+        width={175}
+        height={233}
+        sizes="175px"
+        quality={75}
+        draggable={false}
+        containerClassName="h-full w-full pointer-events-none"
+        className="h-full w-full select-none object-cover"
+        fetchPriority={isFront ? "high" : "auto"}
+        priority
+      />
     </motion.div>
   );
 };
@@ -166,5 +150,5 @@ const cardData: Card[] = [
   {
     id: 3,
     url: "/images/3.webp",
-  }
+  },
 ];

@@ -18,7 +18,6 @@ interface Props {
 
 export function ProjectCard({ project }: Props) {
   const { name, href, description, image, tags, links } = project;
-  console.log(image)
   return (
     <Card className="flex flex-col">
       <CardHeader>

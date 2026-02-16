@@ -1,6 +1,5 @@
 "use server";
 
-import ContactFormEmail from "@/components/email/ContactFormEmail";
 import { Resend } from "resend";
 import { z } from "zod";
 import { ContactFormSchema } from "./schemas";

@@ -50,7 +50,7 @@ export default function Home() {
           </p>
 
           <section className="mt-6 flex flex-wrap items-center gap-4">
-            <Link href="/resume.pdf" target="_blank">
+            <Link href="https://drive.google.com/file/d/1Mr_PhtFKzy1UiH0HkT5MNM67xRMZy6ld/view?usp=sharing" target="_blank">
               <Button variant="outline">
                 <span className="font-semibold">Resume</span>
                 <FileDown className="ml-2 size-5" />

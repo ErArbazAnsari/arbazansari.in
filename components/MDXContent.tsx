@@ -14,14 +14,14 @@ import {
 } from "./ui/table";
 import { cn } from "@/lib/utils";
 
-function Code({ children, ...props }: any) {
+function Code({ children, ...props }: React.HTMLAttributes<HTMLElement>) {
   const className = props.className ?? "";
 
   if (className.includes("language-mermaid")) {
     return <Mermaid chart={String(children).trim()} />;
   }
 
-  let codeHTML = highlight(String(children));
+  const codeHTML = highlight(String(children));
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
 }
 
