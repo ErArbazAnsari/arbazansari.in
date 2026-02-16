@@ -57,13 +57,3 @@ const skillCategory = z.object({
     items: z.array(z.string()),
 });
 export const skillsSchema = z.object({ skills: z.array(skillCategory) });
-
-const certification = z.object({
-    name: z.string(),
-    description: z.string(),
-    href: z.string().url().optional(),
-    icon: z.custom<keyof typeof dynamicIconImports>().optional(),
-});
-export const certificationsSchema = z.object({
-    certifications: z.array(certification),
-});
