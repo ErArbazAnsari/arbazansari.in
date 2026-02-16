@@ -82,7 +82,7 @@ export default function ContactForm() {
           name="b_website_hp"
           tabIndex={-1}
           autoComplete="off"
-          className="pointer-events-none absolute -left-[9999px] opacity-0"
+          className="pointer-events-none absolute -left-2499.75 opacity-0"
         />
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
