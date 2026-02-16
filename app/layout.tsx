@@ -18,14 +18,14 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Ted Thoughts.",
+  title: "Arbaz Ansari | Full Stack Developer",
   description: "My personal site to showcase my developer work and opinions.",
   icons: {
     icon: [
       { url: "/favicon.ico" },
       { url: "/icon.svg", type: "image/svg+xml" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/favicon.ico",
   },
   manifest: "/manifest.json",
 };

@@ -3,7 +3,7 @@
     {
       "name": "Strikes Community",
       "description": "A scalable real-time messaging platform supporting group channels and direct messages using an event-driven architecture.",
-      "image": "/img/strikes.png",
+      "image": "/projects/strikescommunity.gif",
       "tags": [
         "Next.js",
         "Socket.IO",
@@ -21,7 +21,7 @@
         },
         {
           "name": "Link",
-          "href": "https://strikes.arbazansari.in",
+          "href": "https://strikescommunity.arbazansari.in",
           "icon": "globe"
         }
       ]
@@ -29,7 +29,7 @@
     {
       "name": "Share My Code",
       "description": "A modern full-stack platform for creating, storing, and sharing reusable code snippets.",
-      "image": "/img/sharemycode.png",
+      "image": "/projects/sharemycode.gif",
       "tags": [
         "Next.js",
         "MongoDB",
@@ -39,8 +39,13 @@
       ],
       "links": [
         {
+          "name": "Docs",
+          "href": "https://github.com/erarbazansari/sharemycode",
+          "icon": "globe"
+        },
+        {
           "name": "Link",
-          "href": "https://sharemycode.arbazansari.in",
+          "href": "https://sharemycode1.vercel.app",
           "icon": "globe"
         }
       ]
@@ -48,7 +53,7 @@
     {
       "name": "Code Lamp - AI Coding Assistant",
       "description": "A VS Code extension that assists developers with writing, reviewing, explaining, and debugging code directly inside the editor.",
-      "image": "/img/codelamp.png",
+      "image": "/projects/codelamp.gif",
       "tags": [
         "VS Code Extension",
         "Google Gemini",
@@ -57,8 +62,13 @@
       ],
       "links": [
         {
+          "name": "Docs",
+          "href": "https://github.com/erarbazansari/codelamp",
+          "icon": "globe"
+        },
+        {
           "name": "Link",
-          "href": "https://marketplace.visualstudio.com/items?itemName=ArbazAnsari.code-lamp",
+          "href": "https://marketplace.visualstudio.com/items?itemName=arbazansari.codelamp",
           "icon": "globe"
         }
       ]

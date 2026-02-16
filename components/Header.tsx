@@ -20,7 +20,7 @@ export default function Header() {
             {navLinks.map((nav, id) => (
               <li key={id} className="link">
                 <Link href={nav.href} title={nav.title}>
-                  {nav.name}
+                  {(nav.name)[0].toUpperCase() + (nav.name).slice(1)}
                 </Link>
               </li>
             ))}

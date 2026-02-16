@@ -17,6 +17,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "KT Computer Services Pvt. Ltd.",
+      "href": "https://www.linkedin.com/company/kt-computer-services/",
+      "logo": "/experience/ktcomputer.webp",
+      "positions": [
+        {
+          "title": "IT Engineer (Part Time)",
+          "start": "Jan 2021",
+          "end": "May 2025",
+          "description": [
+            "Installed, configured, and maintained systems and network devices while supporting 500+ customers with on-site and remote technical assistance.",
+            "Contributed to scaling the startup as the first employee by setting up IT workflows, coordinating a team of 6+ members, and ensuring smooth operations across all client projects.",
+            "Diagnosed and resolved 1500+ hardware, software, and networking issues, significantly reducing system downtime for clients."
+          ]
+        }
+      ]
     }
   ]
 }
