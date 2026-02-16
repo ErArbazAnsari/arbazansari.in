@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://linkedin.com/in/erarbazansari",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/erarbazansari",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:mail.arbazansari@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}

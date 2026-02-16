@@ -1,0 +1,16 @@
+{
+  "introduction": {
+    "greeting": "hi ted here. 👋",
+    "description": "Backend by profession, full-stack by passion. I build and self-host the lot.",
+    "chatPrompt": "For Q&A, start a chat with Ted Support",
+    "escalation": {
+      "text": "For any escalations, please find my",
+      "linkText": "Ted Lead",
+      "suffix": "instead."
+    }
+  },
+  "escalationLink": {
+    "href": "https://www.instagram.com/gomugomu.cat",
+    "title": "meow"
+  }
+}
